@@ -1,0 +1,28 @@
+﻿@model List<Player>
+
+
+<div>
+    <h1>Lista de Jugadores </h1>
+    <a asp-controller="MvcPlayer" asp-action="CreateNewPlayer">Add New Calciatore</a>
+
+
+    @foreach (var player in Model)
+    {
+        <div class="card mb-3" style="max-width: 540px;">
+            <div class="row g-0">
+                <div class="col-md-4">
+                    <img src="/image/avatar-3814081_1280.png" class="img-fluid rounded-start" alt="...">
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <h5 class="card-title">@player.Name</h5>
+                        <p class="card-text">@player.Position</p>
+                        <p class="card-text">@player.FavoriteFoot</p>
+                        <a href="#" class="btn btn-primary">Evaluar habilidades</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    }
+
+</div>

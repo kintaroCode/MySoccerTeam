@@ -1,0 +1,32 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+  
+}
+
+@media (max-width: 767px) {
+    /* Establece la altura deseada para la tarjeta en dispositivos móviles */
+    
+}
+
+En este ejemplo, hemos utilizado una media query (@media (max-width: 767px)) para aplicar estilos específicos cuando el ancho de la pantalla sea igual o menor a 767 píxeles, que es típicamente el rango de dispositivos móviles. Dentro de la media query, puedes establecer la altura deseada para la tarjeta en dispositivos móviles ajustando el valor de height según tus necesidades. Esto permitirá controlar la altura de la tarjeta solo en dispositivos móviles sin afectar dispositivos más grandes.
+
+
+
+
+
+
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}
